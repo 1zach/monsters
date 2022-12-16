@@ -1,0 +1,109 @@
+.modal {
+  position: fixed;
+  top: 15%;
+  left: 40%;
+  height: 300px;
+  width: 300px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  color: white;
+  box-shadow: black 4px 4px 15px;
+  background: linear-gradient(
+    to right,
+    rgba(7, 27, 82, 1) 0%,
+    rgba(0, 128, 128, 1) 100%
+  );
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  text-transform: capitalize;
+  gap: 10px;
+}
+
+.name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.types {
+  display: flex;
+  gap: 10px;
+}
+
+.type {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.close-modal {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  background-color: transparent;
+  color:white;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  transition: .3s;
+
+}
+
+.close-modal:hover {
+  scale: 1.7;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.grass {
+  background-color: green;
+}
+
+.poison {
+  background-color: purple;
+}
+
+.fire {
+  background-color: orange;
+}
+
+.bug {
+  background-color: darkgreen;
+}
+
+.water {
+  background-color: lightskyblue;
+}
+
+.ground {
+  background-color: sienna;
+}
+
+.fairy {
+  background-color: pink;
+}
+
+.electric {
+  background-color: rgb(241, 241, 67);
+  color: black;
+}
+
+.rock {
+  background-color: grey;
+}
+
+.psychic {
+  background-color: rgb(255, 177, 190);
+}
+
+.fighting {
+  background-color: rgb(128, 27, 27);
+}
+
+.ice {
+  background-color: darkblue;
+}

@@ -19,7 +19,7 @@ class App extends Component {
   componentDidMount() {
     let pokemonArrayComplete = []
     const findPokemon = () => {
-      fetch("https://pokeapi.co/api/v2/pokemon?limit=151.")
+      fetch("https://pokeapi.co/api/v2/pokemon?limit=200.")
       .then((res) => res.json())
       .then((pokemonArray) => {
         

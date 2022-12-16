@@ -8,8 +8,9 @@ export default function CardList(props) {
 
 const [pokemon, setPokemon] = useState([])
  console.log(pokemon)
-  
+  console.log(props)
   const {monsters} = props.sort((a, b) => a.id - b.id)
+  
   
   useEffect(() => {
     Promise.all(
@@ -23,7 +24,7 @@ const [pokemon, setPokemon] = useState([])
           monster
         };
       })
-    ).then((monsters) => setPokemon(monsters));
+    ).then((monsters) => setPokemon([...monsters].sort((a,b) => a.id - b.id)));
   }, []);
 
   return (

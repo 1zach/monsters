@@ -1,23 +1,17 @@
-import { Component } from "react";
+import { Component, useState } from "react";
 import './CardList.css';
 import Card from "../Card/Card"
+
+
 
 export default function CardList(props) {
   const {monsters} = props;
 
   return (
-    <Card monsters={monsters} />
+    <div>
+    <Card monsters={monsters}/>
+    </div>
   )
 }
-
-
-// class CardList extends Component {
-//   render() {
-//     const {monsters} = this.props;
-//     return(
-//         <Card monsters={monsters} />
-//     )
-//   }
-// }
 
 
